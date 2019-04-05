@@ -1,0 +1,145 @@
+body {
+    font-family: 'Cabin';
+    background-image: url('https://www.reliablepsd.com/wp-content/themes/reliable/images/blog/bg01.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Roboto Condensed';
+    font-size: 96px;
+    margin: 60px 0 40px;
+    color: brown;
+}
+
+.menu-container {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    background: wheat;
+    position: relative;
+}
+
+.menu {
+    width: 47%;;
+    list-style: none;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.menu-item {
+    float: left;
+    height: 60px;
+    padding: 20px 0;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.menu-item-text {
+    padding-bottom: 5px;
+    margin: 0px 10px;
+    width: 120px;
+    display: block;
+    border-bottom: 1px solid black;
+}
+
+.menu-item:hover .menu-item-text {
+    border-bottom: 4px solid crimson;
+    font-weight: bold;
+    color: crimson
+}
+
+.menu-item:hover .submenu-container {
+    opacity: 1;
+    height: 300px;
+} 
+
+.submenu-container:hover {
+    opacity: 1;
+    height: 300px;
+}
+
+.submenu-container {
+    background: peachpuff;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    height: 0;
+    left: 0;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    opacity: 0;
+    transition-duration: .3s;
+    transition-property: opacity;
+}
+
+.submenu {
+    list-style: none;
+    float: left;
+    padding: 40px 0;
+    height: 220px;
+    border-right: 1px solid black;
+}
+
+.submenu-item {
+    padding: 10px;
+}
+
+.submenu-item-text {
+    width: 180px;
+    display: block;
+    text-align: left;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.submenu-item:hover {
+    background-color: darkslategray;
+    color: white;
+}
+
+.submenu-item:hover .submenu-content,
+.submenu-content:hover {
+    display: block;
+}
+
+.submenu-content {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    border-left: 1px solid black;
+    overflow: hidden;
+}
+
+.submenu-img {
+    width: 200px;
+    margin: 10px;
+    float: left;
+}
+
+.sub-submenu {
+    float: left;
+    margin: 30px 10px;
+    list-style: none;
+    color: black;
+    font-weight: bolder;
+}
+
+.sub-submenu-item:nth-of-type(1) {
+    margin-top: 15px;
+}
+
+.sub-submenu-item {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+}
+
+.sub-submenu-item:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
